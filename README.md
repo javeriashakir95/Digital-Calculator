@@ -32,7 +32,7 @@ That’s it! 🎉
 
 🌐 Live Demo
 
-👉 https://javeriashakir95.github.io/Digital-Calculator/
+👉 at https://javeriashakir95.github.io/ApexcifyTechnologys_Digital-Calculator/
 
 🤝 Contributing
 
