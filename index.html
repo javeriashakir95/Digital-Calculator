@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Glass Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app" role="application" aria-label="Neon Glass Calculator with History">
+    <!-- Calculator -->
+    <section class="calc" aria-label="Calculator">
+      <div class="header">
+
+        <div class="controls">
+          <button class="chip" id="toggle-history" aria-expanded="true">Toggle History</button>
+          <button class="chip" id="clear-history">Clear History</button>
+        </div>
+      </div>
+
+      <div class="display-wrap">
+        <input id="display" class="display" type="text" inputmode="numeric" aria-label="calculator display" readonly />
+        <div id="ghost" class="ghost">Enter an expression…</div>
+      </div>
+
+      <div class="grid" role="group" aria-label="Calculator keys">
+        <button class="key op" data-key="C" aria-label="Clear">C</button>
+        <button class="key op" data-key="DEL" aria-label="Delete">DEL</button>
+        <button class="key op" data-val="%" aria-label="Modulo">%</button>
+        <button class="key op" data-val="/" aria-label="Divide">÷</button>
+
+        <button class="key num" data-val="7">7</button>
+        <button class="key num" data-val="8">8</button>
+        <button class="key num" data-val="9">9</button>
+        <button class="key op" data-val="*" aria-label="Multiply">×</button>
+
+        <button class="key num" data-val="4">4</button>
+        <button class="key num" data-val="5">5</button>
+        <button class="key num" data-val="6">6</button>
+        <button class="key op" data-val="-" aria-label="Subtract">−</button>
+
+        <button class="key num" data-val="1">1</button>
+        <button class="key num" data-val="2">2</button>
+        <button class="key num" data-val="3">3</button>
+        <button class="key op" data-val="+" aria-label="Add">+</button>
+
+        <button class="key num span-2" data-val="0">0</button>
+        <button class="key num" data-val=".">.</button>
+        <button class="key accent" data-key="=" aria-label="Equals">=</button>
+      </div>
+    </section>
+
+    <!-- History -->
+    <aside class="history" id="history">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+        <h3>HISTORY</h3>
+        <small class="muted" style="color:var(--txt)">Click an item to reuse</small>
+      </div>
+      <ul id="history-list" class="history-list" aria-live="polite" aria-label="Calculation history"></ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
