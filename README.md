@@ -24,7 +24,7 @@ JavaScript (Vanilla JS) – Logic & History Management
 
 Clone this repository:
 
-https://github.com/javeriashakir95/Digital-Calculator.git
+https://github.com/javeriashakir95/ApexcifyTechnologys_Digital-Calculator.git
 
 Open index.html in your browser.
 
